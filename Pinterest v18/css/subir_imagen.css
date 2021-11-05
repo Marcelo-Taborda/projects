@@ -1,0 +1,134 @@
+
+body {
+	background: url(../images/Fondo01.jpg)
+	no-repeat center center fixed;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+}
+
+.article {
+    width: 95%;
+    max-width: 1000px;
+    background: rgba(0, 0, 0, 0.9);
+    border-radius: 15px;
+    margin: 10px 0px;
+    display: flex;
+}
+
+.imagePreview {
+    width: 50%;
+    border-radius: 15px 0px 0px 15px;
+    background: rgba(134, 134, 134, 0.3);
+    color: rgb(151, 149, 0);
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    transition: .5s;
+}
+
+#prev {
+    width: 100%;
+    height: 300px;
+    border-radius: 15px 0px 0px 15px;
+    border: 6px dashed rgb(151, 149, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.imagePreview:hover {
+    background: rgba(0, 0, 0, 0.651);
+    transition: .5s;
+}
+
+#prev i {
+    font-size: 50px;
+}
+
+.ingresar_imagen {
+    width: 50%;
+    color: #fff;
+    font-family:navegacion;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.ingresar_imagen h2 {
+    margin: 20px 0px;
+    font-size: 50px;
+}
+
+input#input_imagen {
+    display: none;
+}
+
+input#boton_imagen {
+    display: block;
+    margin: 20px auto;
+    padding: 5px 10px;
+    font-size: 15px;
+    border-radius: 50px;
+    background-color: white;
+    color: black;
+}
+
+div.label{
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 100%;
+    display: block;
+    border-radius: 15px 0px 0px 15px;
+}
+
+footer {
+    background: rgba(0,0,0,0.75);
+    padding: 10px 0px;
+    text-align: center;
+    color: #fff;
+}
+
+/*----------------- Tamaño ------------------*/
+
+@media screen and (max-width: 655px) { 
+    .article {
+        flex-direction: column;
+    }
+    
+    .imagePreview {
+        width: 100%;
+    }
+
+    .ingresar_imagen {
+        width: 100%;
+    }
+
+    .imagePreview {
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    #prev {
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    img {
+        border-radius: 15px 15px 0px 0px;
+    }
+    
+}

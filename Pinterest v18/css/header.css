@@ -1,0 +1,257 @@
+:root {
+    --buscador_tamaño: 300px;
+}
+
+@font-face {
+    font-family:titulo;
+    src: url(../fonts/LoveYaLikeASisterSolid.ttf);
+}
+@font-face {
+    font-family:navegacion;
+    src: url(../fonts/Biber_Beard.ttf);
+}
+
+/*----------------- header ------------------*/
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 20px 40px 20px 40px;
+}
+
+.icono_navegacion, .navegacion, .titulo, .buscador {
+    margin: 0px 25px 0px 0px;
+}
+
+/*----------------- x3 ------------------*/
+
+.x3 {
+    display: flex;
+}
+
+/*----------------- icono navegacion ------------------*/
+
+.icono_navegacion{
+	color: rgb(255, 255, 255);
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    transition: .5s;
+    z-index: 600;
+}
+
+/*----------------- Titulo ------------------*/
+
+.titulo {
+    display: flex;
+    align-items: center;
+    font-family: titulo;
+    z-index: 550;
+}
+
+.titulo a {
+    text-decoration: none;
+	font-size: 1.5em;
+    color: #fff;
+}
+
+/*----------------- Buscador ------------------*/
+
+.buscador {
+    white-space: nowrap;
+    z-index: 500;
+}
+
+.form_buscador {
+    width: var(--buscador_tamaño);
+    overflow: hidden;
+}
+
+input#search{
+	width: var(--buscador_tamaño);
+	height: 40px;
+	background: #ffffff21;
+	border: none;
+	font-size: 10pt;
+	color: #fff;
+	padding-left: 15px;
+	border-radius: 5px;
+}
+
+.buscador button.icono_buscador{
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	border: none;
+	background: #000000;
+	height: 40px;
+	width: 50px;
+	color: #ffffff;
+	opacity: 0;
+	font-size: 10pt;
+	transition: all .55s ease;
+}
+
+.buscador:hover button.icono_buscador{
+    outline: none;
+    opacity: 1;
+    margin-left: -50px;
+}
+ 
+.buscador:hover button.icono_buscador:hover{
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    color: #000;
+}
+
+/*----------------- Menu Navegacion ------------------*/
+
+.navegacion {
+    display: flex;
+    align-items: center;
+    z-index: 475;
+}
+
+.lista {
+    width: 326px;
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	list-style: none;
+}
+
+.lista a {
+	color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-size: 1.2em;
+    font-family:navegacion;
+}
+
+.lista a:hover {
+	color: #fff;
+	transition: .5s;
+}
+
+.lista .enlace_blanco {
+	color: rgba(255,255,255,1);
+}
+
+/*----------------- Boton ------------------*/
+
+.login .entrar, .salir{
+    display: flex;
+    align-items: center;
+	border-radius: 25px;
+	border: 2px solid #fff;
+	text-decoration: none;
+	padding: 5px 10px;	
+	background-color: #fff;
+    color: rgb(0, 0, 0);
+}
+
+.login .entrar:hover, .salir:hover {
+	background-color: rgba(0, 0, 0, 0);
+	color: #fff;
+	transition: .5s;
+}
+
+.login .entrar::before {
+    content: "Entrar ";
+}
+
+.login .salir::before {
+    content: "Salir ";
+}
+
+.login .salir {
+    display: none;
+}
+
+/*----------------- Tamaño ------------------*/
+
+@media screen and (max-width: 994px) {
+
+	.icono_navegacion {
+		display: block;
+    }
+    
+    .login .entrar::before, .login .salir::before {
+        display: none;
+    }
+    /**/
+	.navegacion {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: #000000;
+        width: 70%;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        height: 100vh;
+        margin: 0px 0px 0px 0px;
+        transition: .5s;
+    }
+
+    .navegacion .lista {
+        display: flex;
+        flex-direction: column;
+        margin-top: 127px;
+    }
+
+    .navegacion .lista li {        
+        padding: 20px 0px 0px 0px;
+        font-size: 1.5em;
+    }
+
+    .ocultar_opciones {
+        left: -70%;
+        transition: .5s;
+    }
+    .rotar_icono {
+        transform: rotate(90deg);
+        transition: .5s;
+    }
+    
+
+    @media screen and (max-width: 655px) {
+        .header {
+            padding: 20px 10px 20px 10px;
+        }
+
+        .icono_navegacion, .titulo, .buscador {
+                margin: 0px 10px 0px 0px;
+        }
+        
+        .x3 {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        @media screen and (max-width: 550px) {
+            .buscador {
+                margin-top: 20px;
+            }
+            
+            @media screen and (max-width: 413px) {
+                :root {
+                    --buscador_tamaño: 66vw;
+                }
+        
+            }
+        }
+    }
+}
+
+path{
+    fill: #ffffff !important;
+    
+}
+
+svg {
+    position: absolute;
+    width: 100%;
+}

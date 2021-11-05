@@ -1,0 +1,90 @@
+@font-face {
+    font-family:navegacion;
+    src: url(../fonts/Biber_Beard.ttf);
+}
+
+body {
+	background: url(../images/Fondo01.jpg)
+	no-repeat center center fixed;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+    height: 100vh;
+    
+}
+
+.principal {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+    
+}
+
+.articles {
+    width: 95%;
+    max-width: 1000px;
+    background: rgba(0, 0, 0, 0.9);
+}
+
+figure {
+    color: #fff;
+    display: flex;
+    font-family:navegacion;
+}
+
+.imagen {
+    width: 66.7%;
+}
+
+.descripcion {
+    height: 10px;
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+img {
+    width: 100%;
+    display: block;
+}
+
+footer {
+    background: rgba(0,0,0,0.75);
+    padding: 10px 0px;
+    text-align: center;
+    color: #fff;
+}
+
+.tag {
+    text-decoration: none;
+    color: #000;
+    display: inline;
+    padding: 2.5px 5px;
+    margin: 5px 0px 0px 5px;
+    background-color: yellow;
+}
+
+@media screen and (max-width: 655px) { 
+    figure {
+        flex-direction: column;
+    }
+    
+    .imagen {
+        width: 100%;
+    }
+
+    .descripcion {
+        flex-wrap: nowrap;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }    
+}
