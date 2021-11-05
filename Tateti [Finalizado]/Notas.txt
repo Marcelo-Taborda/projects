@@ -1,0 +1,2 @@
+#1 Mejorar las jugadas de la pc
+   - Si el usuario esta por ganar, la pc debe realizar su jugada en la casilla que le daria la victoria.

@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+$square-Border: calc((400px / 10) / 6);
+$tetrisCont-W: 400px;
+$tetrisCont-H: calc(400px * 2);
+
+header {
+    height: 100px;
+    color: white;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    span {
+        a {
+            color: royalblue;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    }
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .tetrisContainer {
+        background-color: #1c1c1c;
+        margin: 15px 0px;
+        width: $tetrisCont-W;
+        height: $tetrisCont-H;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(20, 1fr);
+        .celda {
+            border: 1px solid royalblue;
+        }
+        .squareCyan {
+            height: 100%;
+            width: 100%;
+            background-color: #00f0f0ff;
+            border-top: $square-Border solid #b3fbfbff;
+            border-right: $square-Border solid #00c3c3ff;
+            border-left: $square-Border solid #00c3c3ff;
+            border-bottom: $square-Border solid #007878ff;
+        }
+        .squareBlue {
+            height: 100%;
+            width: 100%;
+            background-color: #0000f0ff;
+            border-top: $square-Border solid #b3b3fbff;
+            border-right: $square-Border solid #0000d8ff;
+            border-left: $square-Border solid #0000d8ff;
+            border-bottom: $square-Border solid #000078ff;
+        }
+        .squareOrange {
+            height: 100%;
+            width: 100%;
+            background-color: #f0a000ff;
+            border-top: $square-Border solid #fbe3b3ff;
+            border-right: $square-Border solid #d89000ff;
+            border-left: $square-Border solid #d89000ff;
+            border-bottom: $square-Border solid #785000ff;
+        }
+        .squareYellow {
+            height: 100%;
+            width: 100%;
+            background-color: #f0f000ff;
+            border-top: $square-Border solid #fbfbb3ff;
+            border-right: $square-Border solid #d8d800ff;
+            border-left: $square-Border solid #d8d800ff;
+            border-bottom: $square-Border solid #787800ff;
+        }
+        .squareGreen {
+            height: 100%;
+            width: 100%;
+            background-color: #00f000ff;
+            border-top: $square-Border solid #b3fbb3ff;
+            border-right: $square-Border solid #00d800ff;
+            border-left: $square-Border solid #00d800ff;
+            border-bottom: $square-Border solid #007800ff;
+        }
+        .squareViolet {
+            height: 100%;
+            width: 100%;
+            background-color: #a000f0ff;
+            border-top: $square-Border solid #e3b3fbff;
+            border-right: $square-Border solid #9000d8ff;
+            border-left: $square-Border solid #9000d8ff;
+            border-bottom: $square-Border solid #500078ff;
+        }
+        .squareRed {
+            height: 100%;
+            width: 100%;
+            background-color: #f00000ff;
+            border-top: $square-Border solid #fbb3b3ff;
+            border-right: $square-Border solid #d80000ff;
+            border-left: $square-Border solid #d80000ff;
+            border-bottom: $square-Border solid #780000ff;
+        }
+    }
+    .showNextPiece {
+        width: 150px;
+        height: $tetrisCont-H;
+        background-color: royalblue;
+    }
+}
