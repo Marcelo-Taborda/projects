@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+:root {
+    --columnas: 2;
+    --margenInferior: 16px;
+    --maxWithdGalery: 1764px;
+}
+/* General */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Header */
+
+header {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1c1c1c;
+    color: #fff;
+}
+
+.contHeader {
+    width: calc(100% - var(--margenInferior));
+    max-width: calc(1764px - var(--margenInferior)/2);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    padding: 6px 15px;
+    margin-right: 10px;
+    border-radius: 15px;
+    transition: .3s;
+}
+
+nav a:last-child {
+    margin-right: 0px;
+}
+
+nav a:hover {
+    background-color: #131313;
+    transition: .3s;
+}
+
+
+
+
+
+img {
+    display: block;
+    width: 100%;
+    border-radius: 16px;
+}
+
+.galery {
+    width: 100%;
+    max-width: var(--maxWithdGalery);
+    padding: 0px calc(var(--margenInferior)/2);
+    margin: var(--margenInferior) auto;
+    display: grid;
+    grid-template-columns: repeat(var(--columnas), 1fr);
+    grid-gap: var(--margenInferior);
+}
+
+.images {
+    margin-bottom: var(--margenInferior);
+    cursor: zoom-in;
+}
+
+/* Medidas */
+
+@media (min-width: 0px) and (max-width: 755px){
+    :root {
+        --columnas: 2;
+        --maxWithdGalery: 504px;
+    }
+}
+@media (min-width: 756px) and (max-width: 1007px){
+    :root {
+        --columnas: 3;
+        --maxWithdGalery: 756px;
+    }
+}
+@media (min-width: 1008px) and (max-width: 1259px){
+    :root {
+        --columnas: 4;
+        --maxWithdGalery: 1008px;
+    }
+}
+@media (min-width: 1260px) and (max-width: 1511px){
+    :root {
+        --columnas: 5;
+        --maxWithdGalery: 1260px;
+    }
+}
+@media (min-width: 1512px) and (max-width: 1763px){
+    :root {
+        --columnas: 6;
+        --maxWithdGalery: 1512px;
+    }
+}
+@media (min-width: 1764px) and (max-width: 2015px){
+    :root {
+        --columnas: 7;
+        --maxWithdGalery: 1764px;
+    }
+}
+@media (min-width: 2016px) and (max-width: 2267px){}
+@media (min-width: 2268px) and (max-width: 2519px){}
+@media (min-width: 2520px) and (max-width: 2771px){}
+@media (min-width: 2772px) and (max-width: 3023px){}
+@media (min-width: 3024px) and (max-width: 3275px){}
+@media (min-width: 3276px) and (max-width: 3527px){}
+@media (min-width: 3528px) and (max-width: 3779px){}
+@media (min-width: 3780px) and (max-width: 4031px){}
+@media (min-width: 4032px) and (max-width: 4283px){}
