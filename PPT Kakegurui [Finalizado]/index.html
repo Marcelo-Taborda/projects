@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piedra Papel o Tijeras - Version Kakegurui</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header><h1>Piedra Papel o Tijeras - Version Kakegurui <a href="index.html">[reload]</a></h1></header>
+    <main>
+        <section class="pregunta">
+            <label>¿Cuantas rondas desea jugar?</label>
+            <div>
+                <input type="number" id="cantRondas" value="7">
+                <button onclick="asignarRondas()">OK</button>
+            </div>
+        </section>
+
+        <section class="juego">
+            <div class="contenedorMazo">
+                <div id="mazo"></div>
+            </div>
+
+            <div class="cartas">
+                <div class="cartasPc">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <label id="info">1° RONDA</label>
+                <div class="cartasJugador">
+                    <!-- cartas ingresadas por JS -->
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+
+            <div class="puntos">
+                <label id="puntosJ2">Puntos: 0/4</label>
+                <label id="puntosJ1">Puntos: 0/4</label>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
