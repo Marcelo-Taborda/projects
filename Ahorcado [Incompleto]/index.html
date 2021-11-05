@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <header><h1>Ahorcado</h1></header>
+    <main>
+        <section id="plataforma">
+            <span class="soga"></span>
+            <span class="soportePlataforma"></span>
+            <div class="persona">
+                <span class="cabeza"></span>
+                <span class="cuerpo"></span>
+                <span class="brazoIzq"></span>
+                <span class="brazoDer"></span>
+                <span class="piernaIzq"></span>
+                <span class="piernaDer"></span>
+            </div>
+        </section>
+
+        <section id="ahorcado">
+            <form action="#" id="ingresarPalabra">
+                <input type="password" name="" id="palabra" placeholder="Ingresa una palabra">
+                <input type="submit" onclick="agregarPalabra()" value="¡Listo!">
+            </form>
+
+            <div id="jugadores">
+                <div class="unJugador" onclick="cantidadJugadores(1)">1 JUGADOR</div>
+                <div>O</div>
+                <div class="dosJugadores" onclick="cantidadJugadores(2)">2 JUGADORES</div>
+            </div>
+        </section>
+
+        
+    </main>
+</body>
+</html>

@@ -1,0 +1,204 @@
+:root {
+    --ancho: 3px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+header {
+    height: 125px;
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+#ahorcado {
+    margin-right: 20px;
+}
+
+.palabra {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: red;
+    margin-right: 5px;
+}
+
+.palabra:last-child {
+    margin-right: 0px;
+}
+
+#mostrarPalabra {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.ocultar {
+    opacity: 0;
+}
+
+#letras {
+    width: 600px;
+    height: 200px;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 2px;
+    margin: 30px auto 0px;
+}
+
+#letras .letra {
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .3s;
+}
+
+#letras .letra:hover {
+    background-color: sandybrown;
+    transition: .3s;
+}
+
+#letras .letra span {
+    font-size: 30px;
+}
+
+/* asdasdasdasdasd */
+#plataforma {
+    width: 200px;
+    height: 500px;
+    border-top: 8px solid royalblue;
+    border-left: 8px solid royalblue;
+    position: relative;
+}
+
+.soportePlataforma {
+    display: block;
+    width: 150px;
+    border-bottom: 10px solid royalblue;
+    position: absolute;
+    bottom: 0px;
+    left: -75px;
+}
+
+.soga {
+    display: block;
+    height: 50px;
+    border-right: 10px solid royalblue;
+}
+
+.cabeza {
+    display: block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 5px solid grey;
+    position: absolute;
+    right: -25px;
+}
+
+.cuerpo {
+    display: block;
+    height: 150px;
+    width: 5px;
+    background-color: grey;
+    position: absolute;
+    top: 106px;
+    right: 2.5px;
+}
+
+.brazoIzq {
+    display: block;
+    width: 5px;
+    height: 125px;
+    background-color: grey;
+    transform: rotate(20deg);
+    position: absolute;
+    top: 125px;
+    right: 12.5%;
+}
+
+.brazoDer {
+    display: block;
+    width: 5px;
+    height: 125px;
+    background-color: grey;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 125px;
+    right: -10%;
+}
+
+.piernaDer {
+    display: block;
+    width: 5px;
+    height: 175px;
+    background-color: grey;
+    transform: rotate(-20deg);
+    position: absolute;
+    top: 250px;
+    right: -14.5%;
+}
+
+.piernaIzq {
+    display: block;
+    width: 5px;
+    height: 175px;
+    background-color: grey;
+    transform: rotate(20deg);
+    position: absolute;
+    top: 250px;
+    right: 17%;
+}
+
+.cabeza, .cuerpo, .brazoDer, .brazoIzq, .piernaDer, .piernaIzq {
+    display: none;
+}
+
+main {
+    width: 95%;
+    max-width: 1200px;
+    background-color: violet;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 70px;
+}
+
+.unJugador, .dosJugadores {
+    background-color: royalblue;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.unJugador:hover, .dosJugadores:hover {
+    background-color: rgb(90, 131, 255);
+    transition: .3s;
+}
+
+#ahorcado div {
+    text-align: center;
+    margin: 10px;
+}
+
+#ingresarPalabra {
+    display: none;
+}
