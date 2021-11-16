@@ -1,0 +1,54 @@
+/* A TODO */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+
+/* VARIABLES */
+:root {
+    --carouselHeight: 700px;
+}
+
+/* TITULO PERSONAJES */
+main h2 {
+    max-width: 1512px;
+    margin: 10px auto 0px;
+    background-color: #1c1c1c;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+/* CARRUSEL */
+.carousel-item img{
+    height: var(--carouselHeight);
+    object-fit: cover !important;
+}
+.carousel-item h5 {
+    font-size: 4rem;
+}
+.carousel-item p {
+    font-size: 1rem;
+}
+
+/* MEDIA QUERIES PARA EL CARRUSEL*/
+@media (min-width: 0px) and (max-width: 755px){
+    :root {
+        --carouselHeight: 500px;
+    }
+}
+@media (min-width: 756px) and (max-width: 1007px){
+    :root {
+        --carouselHeight: 600px;
+    }
+}
+@media (min-width: 1008px) and (max-width: 2015px){
+    :root {
+        --carouselHeight: 700px;
+    }
+}
+

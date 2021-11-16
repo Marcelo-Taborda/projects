@@ -1,0 +1,60 @@
+main {
+    max-width: 1350px;
+    width: 100%;
+    margin: 0 auto;
+}
+img {
+    display: block;
+    width: 100%;
+}
+.principalIMG {
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.mainTitle {
+    background-color: #1c1c1c;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+}
+main a {
+    background-color: #1c1c1c;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #fff;
+    transition: .3s;
+    font-weight: bold;
+}
+
+main a svg {
+    margin-left: 5px;
+    width: 16px;
+}
+
+main a:hover {
+    background-color: #fff;
+    color: #000;
+    transition: .3s;
+}
+
+main a:active {
+    opacity: .5;
+    transition: .3s;
+}
+
+.red {
+    color: red !important;
+}

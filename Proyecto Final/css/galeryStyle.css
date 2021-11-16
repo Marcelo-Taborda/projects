@@ -1,0 +1,95 @@
+/* VARIABLES */
+:root {
+    --columnas: 2;
+    --margenInferior: 16px;
+    --maxWithdGalery: 1764px;
+}
+
+/* PREDETERMINADO PARA TODAS LAS IMAGENES DE LA GALERIA*/
+img {
+    display: block;
+    width: 100%;
+}
+
+/* ME GUSTA */
+.red {
+    color: red;
+}
+
+/* ESTILOS DE LA GALERIA */
+main .galery {
+    width: 100%;
+    max-width: var(--maxWithdGalery);
+    padding: 0px calc(var(--margenInferior)/2);
+    margin: var(--margenInferior) auto;
+    display: grid;
+    grid-template-columns: repeat(var(--columnas), 1fr);
+    grid-gap: var(--margenInferior);
+}
+main .galery .images {
+    margin-bottom: var(--margenInferior);
+    border-radius: 16px;
+    cursor: zoom-in;
+    position: relative;
+    overflow: hidden;
+    transition: .3s;
+}
+main .galery .images .characterName {
+    width: 100%;
+    height: 50px;
+    font-size: 24px;
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    transition: .3s;
+    background-color: rgba(0, 0, 0, .75);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    padding: 0px 50px;
+    cursor: default;
+}
+main .galery .images:hover .characterName{
+    bottom: 0px;
+    transition: .3s;
+}
+main .galery .images:hover {
+    box-shadow: 0px 0px 15px rgba(0, 0, 0);
+    transform: scale(1.01);
+    transition: .3s;
+}
+main .galery .images .characterName .loveIcon {
+    cursor: pointer;
+    width: 24px;
+    margin-left: 10px;
+    transition: .3s;
+}
+main .galery .images .characterName .loveIcon:hover {
+    transform: scale(1.2);
+    transition: .3s;
+}
+
+main .galery .images .characterName .loveIcon:active {
+    color: rgba(255, 0, 0, 1);
+}
+
+/* MEDIA QUERIES PARA LA GALERIA */
+@media (min-width: 0px) and (max-width: 755px){
+    :root {
+        --columnas: 2;
+        --maxWithdGalery: 1008px;
+    }
+}
+@media (min-width: 756px) and (max-width: 1007px){
+    :root {
+        --columnas: 3;
+        --maxWithdGalery: 1260px;
+    }
+}
+@media (min-width: 1008px) and (max-width: 2015px){
+    :root {
+        --columnas: 4;
+        --maxWithdGalery: 1512px;
+    }
+}

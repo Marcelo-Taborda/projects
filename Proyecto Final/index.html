@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de personajes</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <script src="./js/bootstrap.bundle.min.js" defer></script>
+    <!-- Sript y estilos propios -->
+    <script src="./js/galeryScript.js" defer></script>
+    <script src="./js/favoriteScript.js" defer></script>
+    <link rel="stylesheet" href="./css/indexMain.css">
+    <link rel="stylesheet" href="./css/header&footer.css">
+    <link rel="stylesheet" href="./css/galeryStyle.css">
+</head>
+<body>
+    <!-- Header de la pagina -->
+    <header>
+        <section class="contHeader">
+            <h1><a href="index.html">| Galeria de personajes</a></h1>
+            <nav>
+                <a href="index.html">Inicio</a>
+                <a href="favorites.html">Favoritos</a>
+                <a href="uploadIMG.html">Subir Imagen</a>
+                <a href="logIn.html">Entrar</a>
+            </nav>
+        </section>
+    </header>
+    <!-- Contenido principal de la pagina-->
+    <main>
+        <!-- Seccion carrusel de imagenes -->
+        <section class="carrousel">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/kobeniHigashiyama009.jpg" class="d-block w-100" alt="Kobeni Higashiyama">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Kobeni Higashiyama</h5>
+                      <p>Chainsaw Man</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/asuka027.jpg" class="d-block w-100" alt="Asuka Lanley">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Asuka Lanley</h5>
+                      <p>Evangelion</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/denji004.jpg" class="d-block w-100" alt="Denji">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5>Denji</h5>
+                      <p>Chainsaw Man</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </section>
+        <!-- Seccion de personajes -->
+        <h2>Personajes</h2>
+        <section class="galery" id="galery">
+            <div class="images" loading="lazy">
+                <img src="images/megumin001.jpg" alt="Megumin">
+                <div class="characterName">
+                    <span>Megumin</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/kazuma002.jpg" alt="Kazuma">
+                <div class="characterName">
+                    <span>Kazuma</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/aqua003.png" alt="Aqua">
+                <div class="characterName">
+                    <span>Aqua</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/denji004.jpg" alt="Denji">
+                <div class="characterName">
+                    <span>Denji</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/makima005.jpg" alt="Makima">
+                <div class="characterName">
+                    <span>Makima</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/reze006.png" alt="Reze">
+                <div class="characterName">
+                    <span>Reze</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/angelDevil007.png" alt="Angel Devil">
+                <div class="characterName">
+                    <span>Angel Devil</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/aki008.jpg" alt="Aki Hayakawa">
+                <div class="characterName">
+                    <span>Aki Hayakawa</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/kobeniHigashiyama009.jpg" alt="Kobeni Higashiyama">
+                <div class="characterName">
+                    <span>Kobeni Higashiyama</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/kakashi010.jpg" alt="Kakashi Hatake">
+                <div class="characterName">
+                    <span>Kakashi Hatake</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/itachi011.png" alt="Itachi Uchiha">
+                <div class="characterName">
+                    <span>Itachi Uchiha</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/derieri012.jpg" alt="Derieri">
+                <div class="characterName">
+                    <span>Derieri</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/monspeet013.jpg" alt="Monspeet">
+                <div class="characterName">
+                    <span>Monspeet</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/lain014.jpg" alt="Lain Iwakura">
+                <div class="characterName">
+                    <span>Lain Iwakura</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/yumeko015.jpg" alt="Yumeko Jabami">
+                <div class="characterName">
+                    <span>Yumeko Jabami</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/ram016.jpg" alt="Ram">
+                <div class="characterName">
+                    <span>Ram</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/yin017.png" alt="Yin">
+                <div class="characterName">
+                    <span>Yin</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/heiXyin018.jpg" alt="Hei">
+                <div class="characterName">
+                    <span>Hei</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/Amber019.png" alt="Amber">
+                <div class="characterName">
+                    <span>Amber</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/tanya020.jpg" alt="Tanya Degurechaff">
+                <div class="characterName">
+                    <span>Tanya Degurechaff</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/toga021.jpg" alt="Himiko Toga">
+                <div class="characterName">
+                    <span>Himiko Toga</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/nero022.jpg" alt="Nero">
+                <div class="characterName">
+                    <span>Nero</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/senjougahara023.jpg" alt="Hitagi Senjougahara">
+                <div class="characterName">
+                    <span>Hitagi Senjougahara</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/mikasa024.jpg" alt="Mikasa Ackerman">
+                <div class="characterName">
+                    <span>Mikasa Ackerman</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/levi025.jpg" alt="Levi Ackerman">
+                <div class="characterName">
+                    <span>Levi Ackerman</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/rei026.jpg" alt="Rei Ayanami">
+                <div class="characterName">
+                    <span>Rei Ayanami</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/asuka027.jpg" alt="Asuka Lanley">
+                <div class="characterName">
+                    <span>Asuka Lanley</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+            <div class="images" loading="lazy">
+                <img src="images/shinji028.jpg" alt="Shinji Ikari">
+                <div class="characterName">
+                    <span>Shinji Ikari</span>
+                    <div class="loveIcon">
+                        <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="heart" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-heart fa-w-16 fa-9x"><path fill="currentColor" d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z" class=""></path></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer de la pagina -->
+    <footer>
+        <h3>¡Gracias por tu visita!</h3>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="favorites.html">Favoritos</a>
+            <a href="uploadIMG.html">Subir Imagen</a>
+            <a href="logIn">Entrar</a>
+        </nav>
+        <label>Pagina creada por Marcelo Taborda 2021</label>
+    </footer>
+</body>
+</html>
