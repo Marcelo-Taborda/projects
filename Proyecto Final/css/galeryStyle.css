@@ -75,7 +75,13 @@ main .galery .images .characterName .loveIcon:active {
 }
 
 /* MEDIA QUERIES PARA LA GALERIA */
-@media (min-width: 0px) and (max-width: 755px){
+@media (min-width: 0px) and (max-width: 412px){
+    :root {
+        --columnas: 1;
+        --maxWithdGalery: 1008px;
+    }
+}
+@media (min-width: 413px) and (max-width: 755px){
     :root {
         --columnas: 2;
         --maxWithdGalery: 1008px;
